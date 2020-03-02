@@ -657,8 +657,8 @@ class Predict():
         self._faces_count = 0
         self._verify_output = False
 
-        if arguments.allow_growth:
-            self._set_tf_allow_growth()
+        #if arguments.allow_growth:
+        self._set_tf_allow_growth() # HARDCODE ARRRRCCHH!!!
 
         self._model = self._load_model()
         self._output_indices = {"face": self._model.largest_face_index,
